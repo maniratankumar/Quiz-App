@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- <div class="start-screen">
+      <button id="start-button">Start</button>
+    </div> -->
+
+
+    <div class="start-screen grid hide ">
+        <!-- hide -->
+        <div class="left-side ">
+            <div class="image"><img src="img/background.png" alt=""></div>
+        </div>
+        <div class="right-side">
+            <div class="game-rules">
+                <header>Some Rules Of this quiz</header>
+                <hr>
+
+                <ul>
+                    <li>You will have only 10 seconds per each question.</li>
+                    <li>Once you select your answer,it can't be undone</li>
+                    <li>you can't select any otion once time gos off</li>
+                    <li>You can't exit from the quiz while you're playing</li>
+                    <li>You'll get points on the basis of your correct answer.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="start-form">
+
+                <form action="" name="welcome-form" onsubmit="submitName(event)">
+                    <input type="text" placeholder="Enter Name" id="username" name="username">
+                    <input type="submit" value="Start Quiz" id="start-button">
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div id="display-container">
+        <div class="header">
+            <div class="username-display">
+                Welcome To
+                <span class="user-name"></span>
+
+            </div>
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="img/alarm-clock.png" title="img" />
+                <span class="time-left">10s</span>
+
+
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+
+    <div class="score-container hide ">
+
+        <div class="user-font">Well done! <span class="display-user"></span></div>
+        <!-- <div id="user-score"></div> -->
+        <div id="Point">Point : <span class="final-point"></span>/25</div>
+        <div><img src="img/cup.png" alt="" class="cup"></div>
+        <button id="restart">Restart</button>
+
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
